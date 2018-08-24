@@ -1,20 +1,15 @@
 import React from 'react'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 
 import styled from 'styled-components'
 
 
-const StyledAppBar = styled(AppBar)`
+const StyledHeader = styled.section`
   background: #009F93
   padding: 5.3rem 0
   color: white
-  display: block
   
   > div {
-    flex-direction: column
-    align-items: initial
     max-width: 96rem
     margin: 0 auto
   }
@@ -35,21 +30,19 @@ const StyledAppBar = styled(AppBar)`
 
 `
 
-function SimpleAppBar(props) {
-  return (
-    <div>
-      <StyledAppBar position="static" color="default">
-        <Toolbar>
-          <Typography variant="title">
-            HTDB Audio
-          </Typography>
-          <Typography variant="subheading">
-            Short description of what the website is about
-          </Typography>
-        </Toolbar>
-      </StyledAppBar>
-    </div>
+const Header = () =>
+  (
+    <StyledHeader>
+      <div>
+        <Typography variant="title">
+          HTDB Audio
+        </Typography>
+        <Typography variant="subheading">
+          Short description of what the website is about
+        </Typography>
+      </div>
+    </StyledHeader>
   );
-}
 
-export default SimpleAppBar
+
+export default Header

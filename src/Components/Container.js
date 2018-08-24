@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 
 const StyledContainer = styled.section`
-  max-width: 960px
+  max-width: 96rem
   margin: 0 auto
 `
 
