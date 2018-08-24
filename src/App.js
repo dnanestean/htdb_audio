@@ -1,26 +1,27 @@
-import React from 'react';
+import React from 'react'
 
 import JssProvider from 'react-jss/lib/JssProvider';
 import { create } from 'jss';
-import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
+import { createGenerateClassName, jssPreset } from '@material-ui/core/styles'
 
-import Container from './Components/Container'
+//Components
+import Header from './Components/Header'
 
-const generateClassName = createGenerateClassName();
-const jss = create(jssPreset());
+const generateClassName = createGenerateClassName()
+const jss = create(jssPreset())
 // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
-jss.options.insertionPoint = document.getElementById('jss-insertion-point');
+jss.options.insertionPoint = document.getElementById('jss-insertion-point')
 
 
 const App = () =>
   (
     <JssProvider jss={jss} generateClassName={generateClassName}>
 
-      <Container/>
+      <Header/>
 
     </JssProvider>
 
-  );
+  )
 
 
-export default App;
+export default App

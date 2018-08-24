@@ -1,5 +1,7 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components'
+
+//Components
 
 
 const StyledContainer = styled.section`
@@ -9,9 +11,7 @@ const StyledContainer = styled.section`
 
 const Container = () => (
 
-  <StyledContainer>
-    <h1>HTDB Audio</h1>
-  </StyledContainer>
+  <StyledContainer/>
 
 );
 
