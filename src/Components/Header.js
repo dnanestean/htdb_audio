@@ -12,6 +12,7 @@ const StyledHeader = styled.section`
   > div {
     max-width: 96rem
     margin: 0 auto
+    padding: 0 1.6rem
   }
   
   & h2, h3 {

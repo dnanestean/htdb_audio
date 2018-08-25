@@ -6,6 +6,7 @@ import { createGenerateClassName, jssPreset } from '@material-ui/core/styles'
 
 //Components
 import Header from './Components/Header'
+import Body from './Components/Body'
 
 const generateClassName = createGenerateClassName()
 const jss = create(jssPreset())
@@ -17,7 +18,10 @@ const App = () =>
   (
     <JssProvider jss={jss} generateClassName={generateClassName}>
 
-      <Header/>
+      <div>
+        <Header/>
+        <Body/>
+      </div>
 
     </JssProvider>
 
