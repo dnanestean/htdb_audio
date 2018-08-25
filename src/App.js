@@ -7,6 +7,7 @@ import { createGenerateClassName, jssPreset } from '@material-ui/core/styles'
 //Components
 import Header from './Components/Header'
 import Body from './Components/Body'
+import Footer from './Components/Footer'
 
 const generateClassName = createGenerateClassName()
 const jss = create(jssPreset())
@@ -21,6 +22,7 @@ const App = () =>
       <div>
         <Header/>
         <Body/>
+        <Footer/>
       </div>
 
     </JssProvider>
