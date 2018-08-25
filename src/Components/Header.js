@@ -24,7 +24,7 @@ const StyledHeader = styled.section`
   }
   
   & h3 {
-    font-size: 2.4rem
+    font-size: 1.8rem
     font-weight: 300
   }
 

@@ -10,7 +10,7 @@ const StyledFooter = styled.section`
   
   & h3 {
     color: white
-    font-size: 2.4rem
+    font-size: 1.8rem
   }
 `
 
