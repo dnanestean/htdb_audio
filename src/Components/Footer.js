@@ -11,6 +11,7 @@ const StyledFooter = styled.section`
   & h3 {
     color: white
     font-size: 1.8rem
+    font-weight: 300
   }
 `
 

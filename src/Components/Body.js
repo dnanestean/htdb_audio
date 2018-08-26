@@ -8,6 +8,11 @@ import HomeBox from './HomeBox'
 const StyledContainer = styled(Grid)`
   max-width: 96rem
   margin: 10rem auto
+  width: 100%
+
+  @media (max-width:600px) {
+    margin: 3rem auto
+  }
  }
 `
 

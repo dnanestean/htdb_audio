@@ -27,6 +27,22 @@ const StyledHeader = styled.section`
     font-size: 1.8rem
     font-weight: 300
   }
+  
+  @media (max-width: 600px) {
+    padding: 3rem 0
+    
+    > div {
+      text-align: center
+    }
+    
+    & h2 {
+      font-size: 2.6rem
+    }
+  
+    & h3 {
+      font-size: 1.6rem
+    }
+  }
 
 `
 

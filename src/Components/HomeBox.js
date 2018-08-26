@@ -21,10 +21,19 @@ const StyledItem = styled(Paper)`
   h3 {
     font-size: 2.4rem
   }
+  
+  @media (max-width:600px) {
+    padding: 7rem 0
+    
+    h3 {
+      font-size: 2rem
+    }
+  }
+  
 `
 
 const HomeBox = (props) => (
-  <Grid item xs={4}>
+  <Grid item xs={12} sm={6} md={4}>
     <a href="">
       <StyledItem elevation={3}>
         <Typography variant="subheading">{props.title}</Typography>
