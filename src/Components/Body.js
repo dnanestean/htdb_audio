@@ -19,14 +19,13 @@ const StyledContainer = styled(Grid)`
 const Body = () => (
   <StyledContainer container spacing={32}>
 
-    <HomeBox title='Title of the Block'/>
-    <HomeBox title='Title of the Block'/>
-    <HomeBox title='Title of the Block'/>
-    <HomeBox title='Title of the Block'/>
-    <HomeBox title='Title of the Block'/>
-    <HomeBox title='Title of the Block'/>
-    <HomeBox title='Title of the Block'/>
-    <HomeBox title='Title of the Block'/>
+    <HomeBox title='Daily Manna'/>
+    <HomeBox title='Songs In The Night'/>
+    <HomeBox title='KJV Bible'/>
+    <HomeBox title='Six Volume and Tabernacle'/>
+    <HomeBox title='Original Towers'/>
+    <HomeBox title='The Photodrama of Creation'/>
+    <HomeBox title='Hymns of Millennial Dawn'/>
 
   </StyledContainer>
 )

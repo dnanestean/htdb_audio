@@ -5,10 +5,20 @@ import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 
 
+const StyledItemContainer = styled(Grid)`
+  min-height: 24.2rem
+    
+`
+
 const StyledItem = styled(Paper)`
   text-align: center
-  padding: 10rem 0
+  padding: 7rem 1rem
   transition: 0.3s;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   
   &:hover {
     background: #009F93
@@ -33,13 +43,13 @@ const StyledItem = styled(Paper)`
 `
 
 const HomeBox = (props) => (
-  <Grid item xs={12} sm={6} md={4}>
+  <StyledItemContainer item xs={12} sm={6} md={4}>
     <a href="">
       <StyledItem elevation={3}>
         <Typography variant="subheading">{props.title}</Typography>
       </StyledItem>
     </a>
-  </Grid>
+  </StyledItemContainer>
 )
 
 export default HomeBox
