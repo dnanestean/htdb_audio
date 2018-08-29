@@ -36,7 +36,7 @@ const StyledItem = styled(Paper)`
     padding: 7rem 0
     
     h3 {
-      font-size: 2rem
+      font-size: 2rem 
     }
   }
   
