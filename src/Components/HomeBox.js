@@ -8,11 +8,14 @@ import Grid from '@material-ui/core/Grid'
 const StyledItemContainer = styled(Grid)`
   min-height: 24.2rem
     
+  @media (max-width:600px) {
+    min-height: 15rem
+  } 
 `
 
 const StyledItem = styled(Paper)`
   text-align: center
-  padding: 7rem 1rem
+  padding: 5rem 0
   transition: 0.3s;
   height: 100%;
   display: flex;
@@ -29,14 +32,14 @@ const StyledItem = styled(Paper)`
   }
   
   h3 {
-    font-size: 2.4rem
+    font-size: 2rem
   }
   
-  @media (max-width:600px) {
-    padding: 7rem 0
+  @media (min-width:600px) {
+    padding: 7rem 1rem
     
     h3 {
-      font-size: 2rem 
+      font-size: 2.4rem
     }
   }
   
