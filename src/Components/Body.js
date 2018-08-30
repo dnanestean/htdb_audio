@@ -15,7 +15,7 @@ const StyledContainer = styled(Grid)`
   }
   
   @media (min-width:1024px) {
-    margin: 10rem auto
+    margin: 7rem auto
   }
  }
 `

@@ -16,7 +16,7 @@ const StyledItemContainer = styled(Grid)`
 const StyledItem = styled(Paper)`
   text-align: center
   padding: 5rem 0
-  transition: 0.3s;
+  transition: 0.2s;
   height: 100%;
   display: flex;
   justify-content: center;

@@ -54,7 +54,7 @@ const Header = () =>
           HTDB Audio
         </Typography>
         <Typography variant="subheading">
-          Short description of what the website is about
+          Complete Audio of the Harvest Message and the KJV Bible
         </Typography>
       </div>
     </StyledHeader>
