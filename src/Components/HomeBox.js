@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
+import { Link } from '@reach/router'
 
 
 const StyledItemContainer = styled(Grid)`
@@ -47,11 +48,11 @@ const StyledItem = styled(Paper)`
 
 const HomeBox = (props) => (
   <StyledItemContainer item xs={12} sm={6} md={4}>
-    <a href="">
+    <Link to={`${props.link}`}>
       <StyledItem elevation={3}>
         <Typography variant="subheading">{props.title}</Typography>
       </StyledItem>
-    </a>
+    </Link>
   </StyledItemContainer>
 )
 

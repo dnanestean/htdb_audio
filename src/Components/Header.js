@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography'
 import styled from 'styled-components'
 
 
-const StyledHeader = styled.section`
+const StyledHeader = styled.header`
   background: #009F93
   padding: 5.3rem 0
   color: white

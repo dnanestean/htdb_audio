@@ -1,4 +1,5 @@
 import React from 'react'
+import { Router } from '@reach/router'
 
 import JssProvider from 'react-jss/lib/JssProvider';
 import { create } from 'jss';
@@ -15,19 +16,26 @@ const jss = create(jssPreset())
 jss.options.insertionPoint = document.getElementById('jss-insertion-point')
 
 
-const App = () =>
-  (
-    <JssProvider jss={jss} generateClassName={generateClassName}>
+class App extends React.Component {
+  render() {
+    return  (
+      <JssProvider jss={jss} generateClassName={generateClassName}>
 
-      <div>
-        <Header/>
-        <Body/>
-        <Footer/>
-      </div>
+        <div>
+          <Header/>
+          <Router>
+            <Body path='/' />
+          </Router>
+          <Footer/>
 
-    </JssProvider>
 
-  )
+        </div>
+
+      </JssProvider>
+    )
+  }
+}
+
 
 
 export default App

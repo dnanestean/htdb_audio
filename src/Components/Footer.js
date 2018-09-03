@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography'
 import styled from 'styled-components'
 
 
-const StyledFooter = styled.section`
+const StyledFooter = styled.footer`
   background: #000
   text-align: center
   padding: 6.1rem 0

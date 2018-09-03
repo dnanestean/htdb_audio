@@ -23,7 +23,7 @@ const StyledContainer = styled(Grid)`
 const Body = () => (
   <StyledContainer container spacing={32}>
 
-    <HomeBox title='Daily Heavenly Manna'/>
+    <HomeBox title='Daily Heavenly Manna' link='/test'/>
     <HomeBox title='Songs in the Night'/>
     <HomeBox title='KJV Bible'/>
     <HomeBox title='Six Volumes and Tabernacle'/>
