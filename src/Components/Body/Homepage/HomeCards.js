@@ -15,6 +15,7 @@ const StyledItemContainer = styled(Grid)`
 `
 
 const StyledItem = styled(Paper)`
+
   text-align: center
   padding: 5rem 0
   transition: 0.2s;
@@ -46,7 +47,7 @@ const StyledItem = styled(Paper)`
   
 `
 
-const HomeBox = (props) => (
+const HomeCards = (props) => (
   <StyledItemContainer item xs={12} sm={6} md={4}>
     <Link to={`${props.link}`}>
       <StyledItem elevation={3}>
@@ -56,4 +57,4 @@ const HomeBox = (props) => (
   </StyledItemContainer>
 )
 
-export default HomeBox
+export default HomeCards

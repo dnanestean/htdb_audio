@@ -1,9 +1,12 @@
 import React from 'react'
-import Typography from '@material-ui/core/Typography'
 import styled from 'styled-components'
+
+//Components
+import Description from './Common/Description'
 
 
 const StyledFooter = styled.footer`
+
   background: #000
   text-align: center
   padding: 6.1rem 0
@@ -17,9 +20,7 @@ const StyledFooter = styled.footer`
 
 const Footer = () => (
   <StyledFooter>
-    <Typography variant="subheading">
-      © 2016 · HTDB Audio · All rights reserved
-    </Typography>
+    <Description text="© 2016 · HTDB Audio · All rights reserved"/>
   </StyledFooter>
 )
 

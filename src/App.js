@@ -1,5 +1,4 @@
 import React from 'react'
-import { Router } from '@reach/router'
 
 import JssProvider from 'react-jss/lib/JssProvider';
 import { create } from 'jss';
@@ -7,7 +6,7 @@ import { createGenerateClassName, jssPreset } from '@material-ui/core/styles'
 
 //Components
 import Header from './Components/Header'
-import Body from './Components/Body'
+import Container from './Components/Container'
 import Footer from './Components/Footer'
 
 const generateClassName = createGenerateClassName()
@@ -23,12 +22,8 @@ class App extends React.Component {
 
         <div>
           <Header/>
-          <Router>
-            <Body path='/' />
-          </Router>
+          <Container/>
           <Footer/>
-
-
         </div>
 
       </JssProvider>
