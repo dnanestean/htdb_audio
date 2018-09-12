@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid'
 import CardItem from './CardItem'
 
 //Data
-import data from '../../../Data/Homepage/home-cards'
+import data from '../../../Data/Homepage/homeCards'
 
 const CardView = () => (
   <Grid container spacing={32}>
