@@ -1,0 +1,23 @@
+{
+  "towers": {
+    "heading": "Towers",
+    "items": [
+      {
+        "title": "First Tower",
+        "link": "https://www.google.com"
+      },
+      {
+        "title": "Second Tower",
+        "link": "https://www.google.com"
+      },
+      {
+        "title": "Third Tower",
+        "link": "https://www.google.com"
+      },
+      {
+        "title": "Fourth Tower",
+        "link": "https://www.google.com"
+      }
+    ]
+  }
+}

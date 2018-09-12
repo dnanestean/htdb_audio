@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Router } from '@reach/router'
 
-import HomeView from './Body/Homepage/HomeView'
+import CardView from './Body/Cardpage/CardView'
 import ListView from  './Body/Listpage/ListView'
 
 const StyledContainer = styled.section`
@@ -29,7 +29,7 @@ const StyledContainer = styled.section`
 const Container = () => (
   <StyledContainer>
     <Router>
-      <HomeView path='/' />
+      <CardView path='/' />
       <ListView path='/towers' />
     </Router>
 

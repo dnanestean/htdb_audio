@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from '@reach/router'
 
 //Components
 import Heading from './Common/Heading'
@@ -28,15 +29,32 @@ const StyledHeader = styled.header`
 
 `
 
-const Header = () =>
-  (
-    <StyledHeader>
-      <div>
-        <Heading text="HTDB Audio"/>
-        <Description text="Complete Audio of the Harvest Message and the KJV Bible"/>
-      </div>
-    </StyledHeader>
-  );
+class Header extends React.Component {
+  state = {
+    isHome: true
+  }
+
+  changePage = () => (
+    this.setState({
+      isHome: false
+    })
+  )
+
+
+  render() {
+    return (
+      <StyledHeader>
+        <div>
+          <Link to="/">
+            <Heading bolded="true" primary="true" text="HTDB Audio"/>
+          </Link>
+          <Description text="Short description of what the website is about"/>
+        </div>
+      </StyledHeader>
+    );
+  }
+}
+
 
 
 export default Header

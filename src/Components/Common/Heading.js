@@ -7,7 +7,8 @@ const StyledHeading = styled(Typography)`
 
   font-size: 3.6rem
   margin-bottom: 2.1rem
-  color: white
+  color: ${props => props.primary ? "#fff" : "#000"}
+  font-weight: ${props => props.bolded ? "500" : "400"}
   
   @media (max-width: 600px) {
     font-size: 2.6rem
@@ -17,7 +18,7 @@ const StyledHeading = styled(Typography)`
 
 const Heading = props =>
   (
-    <StyledHeading variant="title">
+    <StyledHeading {...props} variant="title">
       {props.text}
     </StyledHeading>
   )

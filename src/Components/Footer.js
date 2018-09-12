@@ -16,6 +16,7 @@ const StyledFooter = styled.footer`
     font-size: 1.8rem
     font-weight: 300
   }
+  
 `
 
 const Footer = () => (
