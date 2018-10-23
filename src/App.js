@@ -22,8 +22,8 @@ class App extends React.Component {
       <JssProvider jss={jss} generateClassName={generateClassName}>
 
         <Router>
-          <Home path='/'/>
-          <Towers path='/towers' />
+          <Home path={process.env.PUBLIC_URL + '/'}/>
+          <Towers path={process.env.PUBLIC_URL + '/towers'} />
         </Router>
 
       </JssProvider>
