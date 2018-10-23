@@ -18,12 +18,15 @@ jss.options.insertionPoint = document.getElementById('jss-insertion-point')
 
 class App extends React.Component {
   render() {
+
+    const baseUrl = process.env.PUBLIC_URL;
+
     return  (
       <JssProvider jss={jss} generateClassName={generateClassName}>
 
         <Router>
-          <Home path={process.env.PUBLIC_URL + '/'}/>
-          <Towers path={process.env.PUBLIC_URL + '/towers'} />
+          <Home path={baseUrl + '/'} baseUrl={baseUrl}/>
+          <Towers path={baseUrl + '/towers'} />
         </Router>
 
       </JssProvider>
