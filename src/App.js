@@ -1,13 +1,14 @@
 import React from 'react'
+import { Router } from '@reach/router'
+
 
 import JssProvider from 'react-jss/lib/JssProvider';
 import { create } from 'jss';
 import { createGenerateClassName, jssPreset } from '@material-ui/core/styles'
 
 //Components
-import Header from './Components/Header'
-import Container from './Components/Container'
-import Footer from './Components/Footer'
+import Home from './Pages/Home'
+import Towers from './Pages/Towers'
 
 const generateClassName = createGenerateClassName()
 const jss = create(jssPreset())
@@ -20,17 +21,15 @@ class App extends React.Component {
     return  (
       <JssProvider jss={jss} generateClassName={generateClassName}>
 
-        <div>
-          <Header/>
-          <Container/>
-          <Footer/>
-        </div>
+        <Router>
+          <Home path='/'/>
+          <Towers path='/towers' />
+        </Router>
 
       </JssProvider>
     )
   }
 }
-
 
 
 export default App

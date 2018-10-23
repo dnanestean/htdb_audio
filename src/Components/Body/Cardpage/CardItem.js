@@ -47,14 +47,14 @@ const StyledItem = styled(Paper)`
   
 `
 
-const CardItem = (props) => (
+const CardItem = ({href, text}) =>
   <StyledItemContainer item xs={12} sm={6} md={4}>
-    <Link to={`${props.href}`}>
+    <Link to={`${href}`}>
       <StyledItem elevation={3}>
-        <Typography variant="subheading">{props.text}</Typography>
+        <Typography variant="subheading">{text}</Typography>
       </StyledItem>
     </Link>
   </StyledItemContainer>
-)
+
 
 export default CardItem

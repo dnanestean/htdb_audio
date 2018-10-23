@@ -1,9 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Router } from '@reach/router'
 
 import CardView from './Body/Cardpage/CardView'
 import ListView from  './Body/Listpage/ListView'
+
+
+//Data
+import dataCards from '../Data/Homepage/homeCards'
+import dataTowers from '../Data/TowerCategory/towers'
+
 
 const StyledContainer = styled.section`
 
@@ -26,14 +31,22 @@ const StyledContainer = styled.section`
  }
 `
 
-const Container = () => (
-  <StyledContainer>
-    <Router>
-      <CardView path='/' />
-      <ListView path='/towers' />
-    </Router>
 
-  </StyledContainer>
-)
+const Container = ({ content }) => {
+  if(content === 'listView') {
+    return (
+      <StyledContainer>
+        <ListView content={dataTowers.towers}/>
+      </StyledContainer>
+    )
+  } else {
+    return (
+      <StyledContainer>
+        <CardView content={dataCards.homeCards}/>
+      </StyledContainer>
+    )
+  }
+}
+
 
 export default Container

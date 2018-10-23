@@ -16,12 +16,12 @@ const StyledHeading = styled(Typography)`
 
 `
 
+
 const Heading = props =>
-  (
+
     <StyledHeading {...props} variant="title">
       {props.text}
     </StyledHeading>
-  )
 
 
 export default Heading

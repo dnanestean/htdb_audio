@@ -6,9 +6,6 @@ import styled from 'styled-components'
 import Heading from '../../Common/Heading'
 import ListItem from './ListItem'
 
-//Data
-import data from '../../../Data/TowerCategory/towers'
-
 
 const StyledContent = styled.div`
   padding: 0 1.6rem
@@ -19,15 +16,16 @@ const StyledContent = styled.div`
   
 `
 
-const ListView = () => (
+
+const ListView = ({content}) =>
   <Grid container spacing={32}>
     <StyledContent>
-      <Heading text={`${data.towers.heading}`}/>
+      <Heading text={`${content.heading}`}/>
       <ul>
-        {data.towers.items.map((tower, index) => <ListItem key={index} href={tower.link} text={tower.title} />)}
+        {content.items.map((item, index) => <ListItem key={index} href={item.link} text={item.title} />)}
       </ul>
     </StyledContent>
   </Grid>
-)
+
 
 export default ListView

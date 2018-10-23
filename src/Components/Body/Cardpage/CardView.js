@@ -4,13 +4,12 @@ import Grid from '@material-ui/core/Grid'
 //Components
 import CardItem from './CardItem'
 
-//Data
-import data from '../../../Data/Homepage/homeCards'
 
-const CardView = () => (
+const CardView = ({content}) => (
   <Grid container spacing={32}>
-    {data.homeCards.map((homeCard) => <CardItem text={homeCard.title} href={homeCard.link}/>)}
+    {content.map((item) => <CardItem key={item.id} text={item.title} href={item.link}/>)}
   </Grid>
 )
+
 
 export default CardView

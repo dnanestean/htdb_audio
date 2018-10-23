@@ -19,10 +19,10 @@ const StyledFooter = styled.footer`
   
 `
 
-const Footer = () => (
+const Footer = () =>
   <StyledFooter>
     <Description text="© 2016 · HTDB Audio · All rights reserved"/>
   </StyledFooter>
-)
+
 
 export default Footer

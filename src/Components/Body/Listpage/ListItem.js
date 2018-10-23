@@ -28,12 +28,13 @@ const StyledItem = styled.li`
     
 `
 
-const ListItem = props => (
+
+const ListItem = ({href, text}) =>
     <StyledItem>
-      <a href={`${props.href}`} target='_blank'>
-        <Typography variant="subheading">{props.text}</Typography>
+      <a href={`${href}`} target='_blank' rel="noopener noreferrer">
+        <Typography variant="subheading">{text}</Typography>
       </a>
     </StyledItem>
-)
+
 
 export default ListItem

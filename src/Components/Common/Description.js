@@ -15,13 +15,12 @@ const StyledDescription = styled(Typography)`
 
 `
 
-const Description = props =>
-  (
-    <StyledDescription variant="subheading">
-      {props.text}
-    </StyledDescription>
 
-  )
+const Description = ({text}) =>
+
+    <StyledDescription variant="subheading">
+      {text}
+    </StyledDescription>
 
 
 export default Description
