@@ -2,7 +2,6 @@
   "name": "htdb_audio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://dnanestean.github.io/htdb_audio",
   "dependencies": {
     "@material-ui/core": "^1.5.1",
     "@material-ui/icons": "^2.0.3",

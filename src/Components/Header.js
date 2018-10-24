@@ -68,7 +68,7 @@ const Header= ({ homeButton }) =>
         <Link to='/'>
           <Heading bolded="true" primary="true" text="HTDB Audio"/>
         </Link>
-        <Description text="Short description of what the website is about"/>
+        <Description text="Complete Audio of the Harvest Message and the KJV Bible"/>
       </div>
       {homeButton &&
         <Link to='/'>
