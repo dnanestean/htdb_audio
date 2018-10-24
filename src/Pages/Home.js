@@ -6,9 +6,9 @@ import Container from '../Components/Container'
 import Footer from '../Components/Footer'
 
 
-const Homepage = ({baseUrl}) =>
+const Homepage = () =>
   <div>
-    <Header baseUrl={baseUrl}/>
+    <Header/>
     <Container content='cardView'/>
     <Footer/>
   </div>

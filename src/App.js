@@ -25,7 +25,7 @@ class App extends React.Component {
       <JssProvider jss={jss} generateClassName={generateClassName}>
 
         <Router>
-          <Home path={baseUrl + '/'} baseUrl={baseUrl}/>
+          <Home path={baseUrl + '/'} />
           <Towers path={baseUrl + '/towers'} />
         </Router>
 

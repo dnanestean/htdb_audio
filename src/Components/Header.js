@@ -60,18 +60,18 @@ const StyledHeader = styled.header`
 `
 
 
-const Header= ({ homeButton, baseUrl }) =>
+const Header= ({ homeButton }) =>
 
   <StyledHeader>
     <div className='container'>
       <div>
-        <Link to={baseUrl + '/'}>
+        <Link to='/'>
           <Heading bolded="true" primary="true" text="HTDB Audio"/>
         </Link>
         <Description text="Short description of what the website is about"/>
       </div>
       {homeButton &&
-        <Link to={baseUrl + '/'}>
+        <Link to='/'>
           <SvgIcon>
             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
           </SvgIcon>
