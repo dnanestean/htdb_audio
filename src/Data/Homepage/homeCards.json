@@ -22,7 +22,7 @@
     },
     {
       "title": "Original Towers",
-      "link":"process.env.PUBLIC_URL/towers",
+      "link":"/towers",
       "id": 5
     },
     {
