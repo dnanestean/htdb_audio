@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Provider } from "../Context";
 
+//Components
 import CardView from './Body/Cardpage/CardView'
 import ListView from  './Body/Listpage/ListView'
 
@@ -32,21 +34,23 @@ const StyledContainer = styled.section`
 `
 
 
-const Container = ({ content }) => {
-  if(content === 'listView') {
-    return (
-      <StyledContainer>
-        <ListView content={dataTowers.towers}/>
-      </StyledContainer>
-    )
-  } else {
-    return (
-      <StyledContainer>
-        <CardView content={dataCards.homeCards}/>
-      </StyledContainer>
-    )
-  }
-}
+const Container = ({ content }) =>
+
+  <StyledContainer>
+
+    {(content === 'listView') &&
+    <Provider value={dataTowers}>
+      <ListView />
+    </Provider>
+    }
+
+    {(content === 'cardView') &&
+    <Provider value={dataCards}>
+      <CardView />
+    </Provider>
+    }
+
+  </StyledContainer>
 
 
 export default Container

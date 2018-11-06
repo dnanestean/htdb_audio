@@ -1,6 +1,7 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import styled from 'styled-components'
+import { Consumer } from "../../../Context";
 
 //Components
 import Heading from '../../Common/Heading'
@@ -17,15 +18,20 @@ const StyledContent = styled.div`
 `
 
 
-const ListView = ({content}) =>
-  <Grid container spacing={32}>
-    <StyledContent>
-      <Heading text={`${content.heading}`}/>
-      <ul>
-        {content.items.map((item, index) => <ListItem key={index} href={item.link} text={item.title} />)}
-      </ul>
-    </StyledContent>
-  </Grid>
+const ListView = () =>
+  <Consumer>
+    {({ towers }) => (
+      <Grid container spacing={32}>
+        <StyledContent>
+          <Heading text={`${towers.heading}`}/>
+          <ul>
+            {towers.items.map((item, index) => <ListItem key={item.id} index={index}/>)}
+          </ul>
+        </StyledContent>
+      </Grid>
+      )}
+  </Consumer>
+
 
 
 export default ListView

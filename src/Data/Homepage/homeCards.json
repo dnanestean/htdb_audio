@@ -2,12 +2,12 @@
   "homeCards": [
     {
       "title": "Daily Heavenly Manna",
-      "link":"",
+      "link":"/calendar",
       "id": 1
     },
     {
       "title": "Songs in the Night",
-      "link":"",
+      "link":"/calendar",
       "id": 2
     },
     {

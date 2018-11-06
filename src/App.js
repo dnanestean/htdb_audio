@@ -9,6 +9,7 @@ import { createGenerateClassName, jssPreset } from '@material-ui/core/styles'
 //Components
 import Home from './Pages/Home'
 import Towers from './Pages/Towers'
+import Calendar from './Pages/Calendar'
 
 const generateClassName = createGenerateClassName()
 const jss = create(jssPreset())
@@ -27,6 +28,7 @@ class App extends React.Component {
         <Router>
           <Home path={baseUrl + '/'} />
           <Towers path={baseUrl + '/towers'} />
+          <Calendar path={baseUrl + '/calendar'} />
         </Router>
 
       </JssProvider>

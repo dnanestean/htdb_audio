@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Typography from '@material-ui/core/Typography'
+import { Consumer } from "../../../Context";
 
 
 const StyledItem = styled.li`
@@ -29,12 +30,17 @@ const StyledItem = styled.li`
 `
 
 
-const ListItem = ({href, text}) =>
-    <StyledItem>
-      <a href={`${href}`} target='_blank' rel="noopener noreferrer">
-        <Typography variant="subheading">{text}</Typography>
-      </a>
-    </StyledItem>
+const ListItem = ({index}) =>
+  <Consumer>
+    {({towers}) => (
+      <StyledItem>
+        <a href={`${towers.items[index].link}`} target='_blank' rel="noopener noreferrer">
+          <Typography variant="subheading"> {towers.items[index].title} </Typography>
+        </a>
+      </StyledItem>
+    )}
+  </Consumer>
+
 
 
 export default ListItem

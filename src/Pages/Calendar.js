@@ -6,12 +6,12 @@ import Container from '../Components/Container'
 import Footer from '../Components/Footer'
 
 
-const Home = () =>
+const Calendar = () =>
   <div>
-    <Header/>
-    <Container content='cardView'/>
+    <Header homeButton/>
+    <Container content='listView'/>
     <Footer/>
   </div>
 
 
-export default Home
+export default Calendar

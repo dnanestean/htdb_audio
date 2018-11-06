@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import { Link } from '@reach/router'
+import { Consumer } from "../../../Context";
 
 
 const StyledItemContainer = styled(Grid)`
@@ -47,14 +48,19 @@ const StyledItem = styled(Paper)`
   
 `
 
-const CardItem = ({href, text}) =>
-  <StyledItemContainer item xs={12} sm={6} md={4}>
-    <Link to={`${href}`}>
-      <StyledItem elevation={3}>
-        <Typography variant="subheading">{text}</Typography>
-      </StyledItem>
-    </Link>
-  </StyledItemContainer>
+const CardItem = ({index}) =>
+  <Consumer>
+    {({ homeCards }) =>(
+      <StyledItemContainer item xs={12} sm={6} md={4}>
+        <Link to={`${homeCards[index].link}`}>
+          <StyledItem elevation={3}>
+            <Typography variant="subheading">{homeCards[index].title}</Typography>
+          </StyledItem>
+        </Link>
+      </StyledItemContainer>
+    )}
+  </Consumer>
+
 
 
 export default CardItem
