@@ -9,7 +9,7 @@ import Footer from '../Components/Footer'
 const Calendar = () =>
   <div>
     <Header homeButton/>
-    <Container content='listView'/>
+    <Container content='calendarView'/>
     <Footer/>
   </div>
 

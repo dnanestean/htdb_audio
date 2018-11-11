@@ -5,11 +5,13 @@ import { Provider } from "../Context";
 //Components
 import CardView from './Body/Cardpage/CardView'
 import ListView from  './Body/Listpage/ListView'
+import CalendarView from './Body/Calendarpage/CalendarView'
 
 
 //Data
 import dataCards from '../Data/Homepage/homeCards'
 import dataTowers from '../Data/TowerCategory/towers'
+import calendarCards from '../Data/CalendarCategory/calendarCards'
 
 
 const StyledContainer = styled.section`
@@ -47,6 +49,12 @@ const Container = ({ content }) =>
     {(content === 'cardView') &&
     <Provider value={dataCards}>
       <CardView />
+    </Provider>
+    }
+
+    {(content === 'calendarView') &&
+    <Provider value={calendarCards}>
+      <CalendarView />
     </Provider>
     }
 
