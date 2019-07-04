@@ -1,17 +1,16 @@
-import React from 'react'
+import React from "react";
 
 //Components
-import Header from '../Components/Header'
-import Container from '../Components/Container'
-import Footer from '../Components/Footer'
+import Header from "../Components/Header";
+import Container from "../Components/Container";
+import Footer from "../Components/Footer";
 
-
-const Calendar = () =>
+const Calendar = () => (
   <div>
-    <Header homeButton/>
-    <Container content='calendarView'/>
-    <Footer/>
+    <Header homeButton />
+    <Container content="calendarView" />
+    <Footer />
   </div>
+);
 
-
-export default Calendar
+export default Calendar;

@@ -2,37 +2,37 @@
   "homeCards": [
     {
       "title": "Daily Heavenly Manna",
-      "link":"/calendar",
+      "link": "/calendar",
       "id": 1
     },
     {
       "title": "Songs in the Night",
-      "link":"/calendar",
+      "link": "/calendar",
       "id": 2
     },
     {
       "title": "KJV Bible",
-      "link":"",
+      "link": "",
       "id": 3
     },
     {
       "title": "Six Volumes and Tabernacle",
-      "link":"",
+      "link": "",
       "id": 4
     },
     {
       "title": "Original Towers",
-      "link":"/towers",
+      "link": "/towers",
       "id": 5
     },
     {
       "title": "The Photodrama of Creation",
-      "link":"",
+      "link": "",
       "id": 6
     },
     {
       "title": "Hymns of Millennial Dawn",
-      "link":"",
+      "link": "",
       "id": 7
     }
   ]

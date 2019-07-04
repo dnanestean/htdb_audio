@@ -1,26 +1,19 @@
-import React from 'react'
-import Typography from '@material-ui/core/Typography'
-import styled from 'styled-components'
-
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import styled from "styled-components";
 
 const StyledDescription = styled(Typography)`
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: white;
 
-  font-size: 1.8rem
-  font-weight: 300
-  color: white
-  
   @media (max-width: 600px) {
-    font-size: 1.6rem
+    font-size: 1.6rem;
   }
+`;
 
-`
+const Description = ({ text }) => (
+  <StyledDescription variant="subheading">{text}</StyledDescription>
+);
 
-
-const Description = ({text}) =>
-
-    <StyledDescription variant="subheading">
-      {text}
-    </StyledDescription>
-
-
-export default Description
+export default Description;

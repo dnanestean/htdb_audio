@@ -1,17 +1,16 @@
-import React from 'react'
+import React from "react";
 
 //Components
-import Header from '../Components/Header'
-import Container from '../Components/Container'
-import Footer from '../Components/Footer'
+import Header from "../Components/Header";
+import Container from "../Components/Container";
+import Footer from "../Components/Footer";
 
-
-const Towers = () =>
+const Towers = () => (
   <div>
-    <Header homeButton/>
-    <Container content='listView'/>
-    <Footer/>
+    <Header homeButton />
+    <Container content="listView" />
+    <Footer />
   </div>
+);
 
-
-export default Towers
+export default Towers;
